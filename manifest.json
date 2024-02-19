@@ -1,0 +1,50 @@
+{
+    "manifest_version": 3,
+    "name": "MAL Simplified",
+    "description": "Cleans up the MAL interface",
+    "version": "1.0",
+    "icons": {
+        "16": "ML.png",
+        "32": "ML.png",
+        "48": "ML.png",
+        "128": "ML.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "ML.png"
+    },
+    "permissions": [
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "exclude_globs":[
+            "https://myanimelist.net/anime/*/*/characters",
+            "https://myanimelist.net/anime/*/*/episode",
+            "https://myanimelist.net/anime/*/*/video",
+            "https://myanimelist.net/anime/*/*/stats",
+            "https://myanimelist.net/anime/*/*/reviews",
+            "https://myanimelist.net/anime/*/*/userrecs",
+            "https://myanimelist.net/anime/*/*/stacks",
+            "https://myanimelist.net/anime/*/*/news",
+            "https://myanimelist.net/anime/*/*/forum",
+            "https://myanimelist.net/anime/*/*/clubs",
+            "https://myanimelist.net/anime/*/*/pics",
+            "https://myanimelist.net/anime/*/*/moreinfo",
+            "https://myanimelist.net/anime/genre/*/*",
+            "https://myanimelist.net/anime/season/*/*"
+          ],
+          "matches": [
+            "https://myanimelist.net/anime/*/*"
+          ],
+          "run_at": "document_start"
+        }
+    ]
+}

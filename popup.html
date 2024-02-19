@@ -1,0 +1,317 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="scripts/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>MAL Simplified</h1>
+            <div class="toggleRow">
+                <h3>Anime Details & Stats</h3>
+                <div>
+                    <span class="toggleText">Auto Complete when rated</span>
+                    <label class="switch">
+                    <input type="checkbox" id="autoCompleteOnRatingActivation">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Members count</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeMembersCountResult">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Preview</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removePreviewVideo">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Side bar</h3>
+                <div>
+                    <span class="toggleText">Collapse Alternative titles</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseAlternativeTitlesList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Alternative titles</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeAlternativeTitlesList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Information</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseInformationList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Information</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeInformationList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Statistics</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseStatisticsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Statistics</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeStatisticsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Available At</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseAvailableAtList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Available At</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeAvailableAtList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Resources</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseResourcesList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Resources</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeResourcesList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Streaming Platforms</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseStreamingPlatformsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Streaming Platforms</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeStreamingPlatformsList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Synopsis</h3>
+                <div>
+                    <span class="toggleText">Collapse Synopsis</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseSynopsisText">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Background</h3>
+                <div>
+                    <span class="toggleText">Collapsible Background</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseBackgroundDetail">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Background</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeBackgroundDetail">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Episode Videos</h3>
+                <div>
+                    <span class="toggleText">Collapse Episode Videos</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseEpisodeList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Episode Videos</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeEpisodeList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Related anime</h3>
+                <div>
+                    <span class="toggleText">Collapse Related Anime</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseRelatedAnimeList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Related Anime</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeRelatedAnimeList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Voice actors & Staff</h3>
+                <div>
+                    <span class="toggleText">Collapse Characters & VAs list</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseVAList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Characters & VAs list</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeVAList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Collapse Staff list</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseStaffList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Staff list</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeStaffList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Theme songs</h3>
+                <div>
+                    <span class="toggleText">Collapse Theme songs</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseThemeSongList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Theme songs</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeThemeSongList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Reviews</h3>
+                <div>
+                    <span class="toggleText">Collapse User Reviews</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseReviewsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove User Reviews</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeReviewsList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Interest Stacks</h3>
+                <div>
+                    <span class="toggleText">Collapse Interest Stacks</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseInterestStacksList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Interest Stacks</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeInterestStacksList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Recommendations</h3>
+                <div>
+                    <span class="toggleText">Collapse Recommendations</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseRecommendationsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Recommendations</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeRecommendationsList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Recent News</h3>
+                <div>
+                    <span class="toggleText">Collapse Recent News</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseRecentNewsList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Recent News</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeRecentNewsList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Forum</h3>
+                <div>
+                    <span class="toggleText">Collapse Forum</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseForumList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Forum</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeForumList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>Featured Articles</h3>
+                <div>
+                    <span class="toggleText">Collapse Featured Articles</span>
+                    <label class="switch">
+                    <input type="checkbox" id="collapseFeaturedArticlesList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Featured Articles</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeFeaturedArticlesList">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <div class="toggleRow">
+                <h3>External/Unrelated Links</h3>
+                <div>
+                    <span class="toggleText">Remove Breadcrumb</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeBreadcrumbList">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove Edit links</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeEditLink">
+                    <span class="slider round"></span>
+                </div>
+                <div>
+                    <span class="toggleText">Remove MALxJapan</span>
+                    <label class="switch">
+                    <input type="checkbox" id="removeMALXJapan">
+                    <span class="slider round"></span>
+                </div>
+            </div>
+            <button id="save" class="btn btn-primary">Save</button>
+        </label>
+        </div>
+    </body>
+    <script src="scripts/popup.js"></script>
+</html>
